@@ -1,15 +1,18 @@
 {
-    "defaultConnection": "default",
-    "connections": {
-      "default": {
-        "connector": "bookshelf",
-        "settings": {
-          "client": "sqlite",
-          "filename": ".tmp/data.db"
-        },
-        "options": {
-          "useNullAsDefault": true
-        }
-      }
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "postgres",
+        "host": "ec2-34-200-15-192.compute-1.amazonaws.com",
+        "port": "5432",
+        "database": "d11pemjoo0pu5p",
+        "username": "lakgkmjjiyzmhc",
+        "password": "aacf9fbe48c6786542af5f8cbf78c78aed8e25d0f6ca0afe60a377558f389076",
+        "ssl": { "rejectUnauthorized": false }
+      },
+      "options": {}
     }
   }
+}

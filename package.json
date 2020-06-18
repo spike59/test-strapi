@@ -8,10 +8,13 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "prod":"SET NODE_ENV=production & npm run start"
+    "test": "SET NODE_ENV=test  & npm run start",
+    "prod": "SET NODE_ENV=production & npm run start"
   },
   "devDependencies": {},
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "find-config": "^1.0.0",
     "knex": "<0.20.0",
     "pg": "^8.2.1",
     "sqlite3": "latest",
