@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "histories",
+  "info": {
+    "name": "history"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "code_name": {
+      "type": "string"
+    },
+    "ref": {
+      "type": "uid"
+    },
+    "creation": {
+      "type": "date"
+    },
+    "pich": {
+      "type": "richtext"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "idea",
+        "first_draft",
+        "drafting",
+        "ready_to_share",
+        "ready_to_publish"
+      ]
+    }
+  }
+}

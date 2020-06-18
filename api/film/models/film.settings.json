@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "films",
+  "info": {
+    "name": "film"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "imdb_title": {
+      "type": "uid"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "poster": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "genre": {
+      "type": "enumeration",
+      "enum": [
+        "policier",
+        "fantastique",
+        "science_fiction",
+        "drame",
+        "aventure",
+        "action",
+        "faits_reels"
+      ]
+    },
+    "ratingImdb": {
+      "type": "decimal"
+    },
+    "votes": {
+      "type": "integer"
+    }
+  }
+}
